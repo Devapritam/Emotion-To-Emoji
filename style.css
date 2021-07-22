@@ -1,0 +1,197 @@
+@import url(
+  'https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap0');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+  color: white;
+  background: #c0d3ff;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+span
+{
+  font-size: 30px;
+}
+
+#result_emotion_name ,#result_emotion_name2  
+{
+  color: black;
+}
+.emotion_name
+{
+  font-size: 25px;
+  font-weight: bold;
+}
+.emoji
+{
+  font-size:48px;
+}
+
+.buttonTop {
+  padding-top: 0;
+  margin-top: 20px;
+  width: 80%;
+  background: transparent;
+  transition: background 0.7s, transform 0.9s;
+  padding-bottom: 15px;
+  border: none;
+}
+
+.buttonTop:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 
+              0 5px 20px rgba(0, 0, 0, 0.2);
+  color: white;
+  background: radial-gradient(#fad296, orange);
+}
+
+.heading {
+  color: #5a5a5a;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.buttonTop:hover .heading {
+  color: white;
+  font-weight: bold;
+}
+
+.snapshot {
+  background: #fff;
+  margin-top: 15px;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.outerCamera {
+  width: 430px;
+  height: 370px;
+  background: radial-gradient(rgb(243, 232, 232), rgb(250, 155, 67));
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5), 
+  0 5px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#camera {
+  width: 370px;
+  height: 310px;
+  /* background: #000; */
+  border-radius: 10px;
+}
+
+.snapshotBtn {
+  margin-top: 20px;
+  transition: 0.5s;
+}
+
+.snapshotBtn:hover {
+  background: orangered;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 
+  0 5px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+.outerImg {
+  width: 430px;
+  height: 370px;
+  background: radial-gradient(rgb(243, 232, 232), rgb(18, 41, 248));
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5), 
+  0 5px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emotionBtn {
+  margin-top: 20px;
+  transition: 0.5s;
+}
+
+.emotionBtn:hover {
+  background: rgb(0, 60, 255);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 
+  0 5px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+  border: none;
+}
+
+#resultImg {
+  width: 370px;
+  height: 280px;
+  /* background: #000; */
+  border-radius: 10px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.webcamDiv {
+  margin-right: 20px;
+  flex-basis: 34%;
+}
+
+.snapshotDiv {
+  margin-left: 20px;
+  flex-basis: 34%;
+}
+
+.predictionDiv {
+  margin-top: -130px;
+  flex-basis: 34%;
+}
+
+@media (max-width: 992px) {
+  .content {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .webcamDiv {
+    margin-right: 0;
+    flex-basis: 100%;
+  }
+
+  .snapshotDiv {
+    margin-left: 0;
+    flex-basis: 100%;
+  }
+
+  .predictionDiv {
+    flex-basis: 100%;
+  }
+
+  .outerImg {
+    overflow: hidden;
+  }
+
+  .buttonTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+}
